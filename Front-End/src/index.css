@@ -1,3 +1,75 @@
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* left | center | right */
+  align-items: center;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-sizing: border-box; /* prevent overflow from padding */
+}
+
+/* Left section (logo) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* stick left */
+}
+
+.navbar-logo {
+  height: 48px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Center section (links) */
+.navbar-center {
+  display: flex;
+  justify-content: center; /* centered in its grid cell */
+  gap: 2rem;
+}
+
+.navbar-link {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-link:hover {
+  background: #646cff;
+  color: #fff;
+}
+
+/* Right section (sign-in) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* stick right */
+}
+
+.navbar-signin {
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.navbar-signin:hover {
+  background: #535bf2;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
