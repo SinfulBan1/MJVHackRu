@@ -6,7 +6,7 @@ export default function NavBar () {
         <nav className="navbar">
             <div className="navbar-left">
                 <Link to="/">
-                    <img src="/assets/navbar_card_die_alt2.png" alt="Home" className="navbar-logo" />
+                    <img src="/assets/busclipart.png" alt="Home" className="navbar-logo" />
                 </Link>
             </div>
             <div className="navbar-center">

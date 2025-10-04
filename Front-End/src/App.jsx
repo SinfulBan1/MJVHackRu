@@ -2,6 +2,7 @@ import './App.css'
 import Layout from './Layout';
 import Homepage from './pages/Homepage';
 import Errorpage from './pages/Errorpage';
+import Reserve from './pages/Reserve';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const routes = [
@@ -13,6 +14,9 @@ const routes = [
       {
         path: '/',
         element: <Homepage/>
+      }, {
+        path: '/reserve',
+        element: <Reserve />
       }
     ]
   },
@@ -20,7 +24,6 @@ const routes = [
 
 const router = createBrowserRouter(routes);
 function App() {
-  console.log('App mounted — router:', !!router);
   return (
     <>
       <RouterProvider router={router} />
