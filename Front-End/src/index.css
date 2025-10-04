@@ -1,7 +1,10 @@
 .navbar {
   width: 100%;
   display: grid;
-  grid-template-columns: auto 1fr auto; /* left | center | right */
+  /* Use symmetric columns so the center cell is visually centered
+     even if left/right content widths differ. Left and right get
+     flexible space (1fr) while the center remains auto-sized. */
+  grid-template-columns: 1fr auto 1fr; /* left | center | right */
   align-items: center;
   background: rgba(30, 30, 30, 0.85);
   padding: 0.5rem 2rem;
@@ -17,7 +20,7 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* stick left */
+  justify-self: start; /* align to left edge of its grid cell */
 }
 
 .navbar-logo {
@@ -29,7 +32,8 @@
 /* Center section (links) */
 .navbar-center {
   display: flex;
-  justify-content: center; /* centered in its grid cell */
+  justify-self: center; /* center the center cell in the navbar */
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -51,7 +55,12 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* stick right */
+  justify-self: end; /* align to right edge of its grid cell */
+  /* Prevent the right content from growing beyond available space */
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .navbar-signin {
