@@ -22,9 +22,9 @@ export default function NavBar () {
                 { isLoading ? <li>loading...</li> : (
                     <>
                     {user && (
-                        <>
+                        <div style={{marginRight:10}}>
                             Logged in as {user.email}
-                        </>
+                        </div>
                     )}
                     <>
                         {user
