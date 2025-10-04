@@ -1,0 +1,101 @@
+const BusSeats = [{
+    SeatNumber: 1,
+    Price: 5
+}, {
+    SeatNumber: 2,
+    Price: 5
+}, {
+    SeatNumber: 3,
+    Price: 5
+}, {
+    SeatNumber: 4,
+    Price: 5
+}, {
+    SeatNumber: 5,
+    Price: 5
+}, {
+    SeatNumber: 6,
+    Price: 5
+}, {
+    SeatNumber: 7,
+    Price: 5
+}, {
+    SeatNumber: 8,
+    Price: 5
+}, {
+    SeatNumber: 9,
+    Price: 5
+}, {
+    SeatNumber: 10,
+    Price: 5
+}, {
+    SeatNumber: 11,
+    Price: 5
+}, {
+    SeatNumber: 12,
+    Price: 5
+}, {
+    SeatNumber: 13,
+    Price: 5
+}, {
+    SeatNumber: 14,
+    Price: 5
+}, {
+    SeatNumber: 15,
+    Price: 5
+}
+, {
+    SeatNumber: 16,
+    Price: 5
+}, {
+    SeatNumber: 17,
+    Price: 6
+}, {
+    SeatNumber: 18,
+    Price: 6
+}, {
+    SeatNumber: 19,
+    Price: 6
+}, {
+    SeatNumber: 20,
+    Price: 7
+}, {
+    SeatNumber: 21,
+    Price: 6
+}, {
+    SeatNumber: 22,
+    Price: 6
+}, {
+    SeatNumber: 23,
+    Price: 6
+}, {
+    SeatNumber: 24,
+    Price: 6
+}, {
+    SeatNumber: 25,
+    Price: 4
+}, {
+    SeatNumber: 26,
+    Price: 4
+}, {
+    SeatNumber: 27,
+    Price: 4
+}, {
+    SeatNumber: 28,
+    Price: 4
+}, {
+    SeatNumber: 29,
+    Price: 7
+}, {
+    SeatNumber: 30,
+    Price: 6
+}, {
+    SeatNumber: 31,
+    Price: 6
+}, {
+    SeatNumber: 32,
+    Price: 6
+}, {
+    SeatNumber: 33,
+    Price: 6
+}]
