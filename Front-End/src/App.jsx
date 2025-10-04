@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import Errorpage from './pages/Errorpage';
 import Reserve from './pages/Reserve';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SignIn from './pages/Signin';
 
 const routes = [
   {
@@ -17,6 +18,9 @@ const routes = [
       }, {
         path: '/reserve',
         element: <Reserve />
+      }, {
+        path: "/signin",
+        element: <SignIn />
       }
     ]
   },
