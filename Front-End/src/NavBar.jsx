@@ -13,7 +13,9 @@ export default function NavBar () {
                 <Link to="/reserve" className="navbar-link">Reserve</Link>
             </div>
             <div className="navbar-right">
+                <Link to="/signin">
                 <button className="navbar-signin">Sign In</button>
+                </Link>
             </div>
         </nav>
         </>
