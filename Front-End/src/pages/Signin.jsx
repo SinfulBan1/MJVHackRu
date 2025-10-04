@@ -23,11 +23,18 @@ export default function SignIn () {
         <h3>Sign In</h3>
         {error && <p>{error}</p>}
         <input
-        type="text"
-        id="username"
-        placeholder="Enter your username"
-        value = {email}
-        onChange={e => setEmail(e.target.value)}/>
+            type="text"
+            id="username"
+            placeholder="Enter your username"
+            value = {email}
+            onChange={e => setEmail(e.target.value)}/>
+        <input
+            type="text"
+            id="password"
+            placeholder="Enter your password"
+            value = {password}
+            onChange={e => setPassword(e.target.value)}/>
+        <button onClick={logIn}>Log In</button>
         </>
     );
 }
