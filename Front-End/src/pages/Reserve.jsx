@@ -8,6 +8,7 @@ export default function Reserve () {
                 Seats 1-16: $5
                 Seats 17-24 and 29-33: $6
         </p>
+            <img src="BusLayout.jpg"/>
         </>
     );
 }
