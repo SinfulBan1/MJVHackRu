@@ -36,6 +36,8 @@ export default function SignIn () {
             value={password}
             onChange={e => setPassword(e.target.value)}/>
         <button onClick={logIn}>Log In</button>
+        <br/>
+        <Link to="/CreateAccount">Create an Account Here</Link>
         </>
     );
 }

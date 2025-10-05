@@ -5,6 +5,7 @@ import Errorpage from './pages/Errorpage';
 import Reserve from './pages/Reserve';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignIn from './pages/Signin';
+import CreateAccount from './pages/CreateAccount';
 
 const routes = [
   {
@@ -21,6 +22,9 @@ const routes = [
       }, {
         path: "/signin",
         element: <SignIn />
+      }, {
+        path: "/CreateAccount",
+        element: <CreateAccount/>
       }
     ]
   },

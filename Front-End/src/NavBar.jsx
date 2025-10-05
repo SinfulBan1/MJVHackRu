@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import useUser from './useUser';
 import { useNavigate } from 'react-router-dom';
 import { getAuth, signOut } from 'firebase/auth';
+import busclipart from './assets/busclipart.png';
 
 export default function NavBar () {
     const { isLoading, user } = useUser();
@@ -12,7 +13,7 @@ export default function NavBar () {
         <nav className="navbar">
             <div className="navbar-left">
                 <Link to="/">
-                    <img src="/assets/busclipart.png" alt="Home" className="navbar-logo" />
+                    <img src={busclipart} alt="Home" className="navbar-logo" />
                 </Link>
             </div>
             <div className="navbar-center">
