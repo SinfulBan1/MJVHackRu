@@ -8,7 +8,17 @@ export default function Reserve () {
                 Seats 1-16: $5
                 Seats 17-24 and 29-33: $6
         </p>
-            <img src="BusLayout.jpg"/>
+            <img src="/BusLayout.jpg" alt="Bus layout" />
+
+            <div>
+                <label for="Seats">Seats:</label>
+                <select id="Seats" name="Seats">
+                    <option value="1-16">1-16</option>
+                    <option value="17-24">17-24</option>
+                    <option value="25-28">25-28</option>
+                    <option value="29-33">29-33</option>
+                </select>
+            </div>
         </>
     );
 }
